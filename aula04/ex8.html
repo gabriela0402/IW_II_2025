@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        user=prompt("Digite o seu nome de usuário: ");
+        senha=prompt("Digite sua senha: ");
+        if (user!="Gabi" && senha!="gr04"){
+            while( user!="Gabi" && senha!="gr04"){
+                user=prompt("Digite o seu nome de usuário: ");
+                senha=prompt("Digite sua senha: ");
+            }
+        }
+        console.log("Login efetuado com sucesso");
+    </script>
+</body>
+</html>

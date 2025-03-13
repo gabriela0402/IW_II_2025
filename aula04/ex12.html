@@ -6,15 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
-        //fazer
-        n=prompt("Digite um número:");
-        i=0
-        n++
-        while (i<n) {
-            console.log(i);
-            i--;
+        let n = parseInt(prompt("Digite um número (1-10):"));
+
+        while (n < 1 || n > 10 ) {
+            n = parseInt(prompt("Digite um número (1-10):"));
         }
+
+        console.log("Válido");
+
+
     </script>
 </body>
 </html>

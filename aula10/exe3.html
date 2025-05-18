@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1</title>
+    <title>Exercicio 3</title>
 </head>
 <body>
-    <input type="text" name="" id="texto">
-    <input type="button" value="Verificar" onclick="">
+    <input type="text" id="caixa"> 
+    <button id="botao" onclick="mostrar()">Enviar</button>
 
     <script>
-        
+        var valor = document.getElementById('caixa');
+        var botao = document.getElementById('botao');
+        var valor_antigo = "";
+
+        function mostrar(){
+            var valor_novo = valor.value;
+            if (valor_novo != valor_antigo){
+                alert(valor_novo);
+                valor_antigo = valor_novo;
+            }else{
+                alert("Digite algo diferente.");
+            }
+            
+        }
     </script>
 </body>
 </html>
